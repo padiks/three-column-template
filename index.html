@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Column HTML+CSS Template</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.25rem; /* 20px converted to rem */
+      line-height: 1.6;
+      margin: 2.5rem; /* 40px converted to rem */
+      color: #000;
+      background-color: #fff;
+    }
+    .content {
+      column-count: 3;
+      column-gap: 2.5rem; /* 40px converted to rem */
+      column-width: 34.1875rem; /* 547px converted to rem */
+      text-align: justify;
+      max-width: 107.5625rem; /* 1721px converted to rem */
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.75rem; /* 28px converted to rem */
+      font-weight: bold;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0.9375rem; /* 15px converted */
+      line-height: 1.6;
+    }
+    h4 {
+      font-size: 0.9rem;
+      font-weight: 400;
+      text-align: center;
+      color: #888;
+      margin-top: 0.3125rem; /* 5px */
+      margin-bottom: 1.25rem; /* 20px */
+      font-style: italic;
+    }
+    p {
+      margin-bottom: 1rem; /* 16px */
+    }
+    .first-word {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    blockquote {
+      font-style: italic;
+      color: #555;
+      border-left: 0.25rem solid #ccc; /* 4px */
+      padding: 0.75rem 1rem;
+      margin: 1.5rem auto;
+      background-color: #f8f9fa;
+      border-radius: 0.25rem;
+      width: 99%;
+      box-sizing: border-box;
+      /* font-size: 1.125rem; for review */
+    }
+    blockquote p {
+      margin: 0;
+      padding: 0;
+    }
+    blockquote::before,
+    blockquote::after {
+      content: none;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    }
+    /* ----------- "Read more" link style with shake effect ----------- */
+    .read-more {
+      color: #555;
+      font-style: italic;
+      text-decoration: none;
+      border-bottom: 1px dashed #555;
+      display: inline-block;
+      transition: transform 0.1s ease, color 0.2s ease;
+    }
+    .read-more:hover {
+      animation: shake 0.3s;
+      cursor: pointer;
+    }
+    /* Keyframes for shake effect */
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      20% { transform: translateX(-2px); }
+      40% { transform: translateX(2px); }
+      60% { transform: translateX(-2px); }
+      80% { transform: translateX(2px); }
+      100% { transform: translateX(0); }
+    }
+    a {
+      color: #888; /* match date color */
+      font-style: italic;
+      text-decoration: none;
+      display: inline-block;
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    /* ----------- Mobile styles ----------- */
+    @media (max-width: 767px) {
+      body {
+        margin-left: 1.25rem;  /* slightly smaller than main */
+        margin-right: 1.25rem;
+      }
+      h1 {
+        font-size: 1.85rem;  /* slightly smaller than previous mobile h1 */
+      }
+      p {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Why FreeBSD Still Matters</h1>
+    <h4>August 26, 2025 &middot; <a href="https://www.freebsd.org/press/">More on FreeBSD Press</a></h4>
+    <p><span class="first-word">For decades</span>, FreeBSD has quietly powered some of the most reliable systems on the internet. Its design philosophy emphasizes clarity, stability, and a well-documented base system, which makes it a favorite for developers who value reliability over hype.</p>
+    <blockquote>
+      <p>Though it may not always grab headlines, FreeBSD remains a foundation for research, servers, and even embedded projects. Appreciating its enduring presence helps us understand the value of simplicity and thoughtful engineering.</p>
+    </blockquote>
+    <p>Beyond its technical elegance, FreeBSD offers a cohesive and integrated system that makes maintenance straightforward. Its ports and packages system provides access to a wide range of software, ensuring flexibility without compromising stability.</p>
+    <p>The community behind FreeBSD continues to innovate, supporting modern hardware and network technologies while keeping the system lean and secure. This ongoing evolution demonstrates that FreeBSD is far from stagnant—it’s a robust platform for both learning and production use.</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis, justo at fringilla fermentum, augue mi hendrerit justo, eget sagittis purus justo eget est.</p>
+    <p>Phasellus sodales, sapien vel gravida ultricies, metus massa consequat lorem, vitae volutpat nunc lorem nec lacus. In non nisl ac nisi fermentum dictum.</p>
+    <p>Curabitur vel feugiat eros. Cras nec ligula sed lorem tristique laoreet. Integer porttitor semper risus, ac vulputate neque laoreet non.</p>
+  </div>
+</body>
+</html>
