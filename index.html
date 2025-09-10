@@ -121,14 +121,34 @@ hr {
   font-weight: bold;
   text-transform: uppercase;
 }
+.light-yellow {
+  background-color: #fffef0;   /* very light yellow background */
+  border: 1px solid #ececec;   /* soft light gray border */
+}
+.light-blue {
+  background-color: #f0f8ff;   /* very light blue background */
+  border: 1px solid #cce6ff;   /* very soft blue border */
+}
+.light-gray {
+  background-color: #fafafa;   /* very light gray background */
+  border: 1px solid #e0e0e0;   /* soft gray border */
+}
 .notice {
-  background-color: #fff9db;   /* light yellow background */
-  border: 1px solid #d3d3d3;  /* light gray border */
+  background-color: #fafafa;   /* very light gray background */
+  border: 1px solid #e0e0e0;   /* soft gray border */
   border-radius: 0.25rem;      /* rounded corners */
   padding: 1rem;               /* spacing inside the box */
   margin: 1rem 0;              /* spacing outside the box */
   color: #333;                 /* text color */
-  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+.inverted {
+  background-color: #222;       /* dark background (near black) */
+  border: 1px solid #444;       /* dark gray border */
+  border-radius: 0.25rem;       /* rounded corners */
+  padding: 1rem;                /* spacing inside the box */
+  margin: 1rem 0;               /* spacing outside the box */
+  color: #f5f5f5;               /* very light text */
   line-height: 1.5;
 }
 .subtitle {
@@ -210,7 +230,7 @@ hr {
 
 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
 
-<p  class="notice">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+<p class="notice">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 
 <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
 
@@ -230,7 +250,7 @@ hr {
 
 <p>Maecenas finibus, libero a fringilla dapibus, risus lacus aliquet nunc, nec laoreet elit justo id libero. Integer vitae nisi ac justo ullamcorper consectetur.</p>
 
-<p>Vivamus tincidunt, justo nec efficitur dapibus, sapien sapien fringilla lorem, at vestibulum libero odio at nisl. Integer ut purus at metus vulputate luctus.</p>
+<p class="inverted">Vivamus tincidunt, justo nec efficitur dapibus, sapien sapien fringilla lorem, at vestibulum libero odio at nisl. Integer ut purus at metus vulputate luctus.</p>
 
 <p>Proin euismod, mauris sit amet facilisis luctus, neque risus tincidunt libero, a hendrerit justo nisl a erat. Nulla facilisi. Suspendisse potenti.</p>
 		
