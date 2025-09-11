@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
 <title>Three Column HTML+CSS Template</title>
 <script>
   const svg = `
@@ -121,18 +122,19 @@ hr {
   font-weight: bold;
   text-transform: uppercase;
 }
+/* 
 .light-yellow {
-  background-color: #fffef0;   /* very light yellow background */
-  border: 1px solid #ececec;   /* soft light gray border */
+  background-color: #fffef0;   
+  border: 1px solid #ececec;   
 }
 .light-blue {
-  background-color: #f0f8ff;   /* very light blue background */
-  border: 1px solid #cce6ff;   /* very soft blue border */
+  background-color: #f0f8ff;   
+  border: 1px solid #cce6ff;   
 }
 .light-gray {
-  background-color: #fafafa;   /* very light gray background */
-  border: 1px solid #e0e0e0;   /* soft gray border */
-}
+  background-color: #fafafa;   
+  border: 1px solid #e0e0e0;   
+} */
 .notice {
   background-color: #fafafa;   /* very light gray background */
   border: 1px solid #e0e0e0;   /* soft gray border */
@@ -140,6 +142,15 @@ hr {
   padding: 1rem;               /* spacing inside the box */
   margin: 1rem 0;              /* spacing outside the box */
   color: #333;                 /* text color */
+  line-height: 1.5;
+}
+.muted {
+  background-color: #f0f0f0;   /* very light gray background */
+  border: none;                 /* no border */
+  border-radius: 0;             /* sharp corners */
+  padding: 1rem;                /* spacing inside the box */
+  margin: 1rem 0;               /* spacing outside the box */
+  color: #555;                  /* softer, lighter gray text */
   line-height: 1.5;
 }
 .inverted {
@@ -190,6 +201,13 @@ hr {
     padding: 0;
     background-color: #fff;
 	}
+  body {
+    font-family: Spectral, Arial, Helvetica, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }	
   .content {
     column-count: 3;
     column-gap: 2.5rem; /* 40px */
@@ -234,7 +252,7 @@ hr {
 
 <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
 
-<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+<p class="muted">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
 
 <hr>
 
@@ -246,11 +264,11 @@ hr {
 		
 <p>Curabitur sagittis, libero eget malesuada dapibus, erat nunc ullamcorper nunc, ac tincidunt justo libero vitae lectus. Vivamus non risus id tortor blandit tincidunt et sit amet erat.</p>
 
-<p>Fusce euismod, odio ut commodo fermentum, lacus purus pretium nunc, sed laoreet sapien magna in metus. Suspendisse potenti. Aliquam erat volutpat.</p>
+<p class="inverted">Fusce euismod, odio ut commodo fermentum, lacus purus pretium nunc, sed laoreet sapien magna in metus. Suspendisse potenti. Aliquam erat volutpat.</p>
 
 <p>Maecenas finibus, libero a fringilla dapibus, risus lacus aliquet nunc, nec laoreet elit justo id libero. Integer vitae nisi ac justo ullamcorper consectetur.</p>
 
-<p class="inverted">Vivamus tincidunt, justo nec efficitur dapibus, sapien sapien fringilla lorem, at vestibulum libero odio at nisl. Integer ut purus at metus vulputate luctus.</p>
+<p>Vivamus tincidunt, justo nec efficitur dapibus, sapien sapien fringilla lorem, at vestibulum libero odio at nisl. Integer ut purus at metus vulputate luctus.</p>
 
 <p>Proin euismod, mauris sit amet facilisis luctus, neque risus tincidunt libero, a hendrerit justo nisl a erat. Nulla facilisi. Suspendisse potenti.</p>
 		
