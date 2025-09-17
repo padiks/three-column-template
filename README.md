@@ -54,7 +54,7 @@ This template is released under the [FreeBSD 2-Clause License](LICENSE) and is o
 - Ideal for blogs, e-books, or text-heavy content.
 
 ## Contributing
-Contributions are welcome! Please submit a pull request or open an issue.
+This template is provided as a finished resource. No additional contributions are expected at this time.
 
 ---
 
